@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<!--
+This sample is from
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+
+ Also look at:
+ http://www.w3schools.com/css/css3_flexbox.asp
+ -->
+
+ <html lang="en">
+  <head>
+    <style>
+    body {
+        font: 18px Helvetica;
+        background: #999999;
+    }
+
+    #main {
+        min-height: 800px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+    }
+ 
+    #main > article {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #cccc33;
+        border-radius: 7pt;
+        background: #dddd88;
+        flex: 3 1 80%;
+        order: 2;
+    }
+
+    #main > nav {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #8888bb;
+        border-radius: 7pt;
+        background: #ccccff;
+        flex: 1 6 20%;
+        order: 1;
+    }
+  
+    #main > aside {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #8888bb;
+        border-radius: 7pt;
+        background: #ccccff;
+        flex: 1 6 20%;
+        order: 3;
+    }
+ 
+    header, footer {
+        display: block;
+        margin: 4px;
+        padding: 5px;
+        min-height: 100px;
+        border: 1px solid #eebb55;
+        border-radius: 7pt;
+        background: #ffeebb;
+    }
+ 
+    /* Too narrow to support three columns */
+    @media all and (max-width: 640px) {
+        #main, #page {
+            flex-direction: column;
+        }
+
+        #main > article, #main > nav, #main > aside {
+        /* Return them to document order */
+            order: 0;
+        }
+  
+        #main > nav, #main > aside, header, footer {
+            min-height: 50px;
+            max-height: 50px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+		<H1>34th Bomb Group Miscellaneous Information</H1>
+    </header>
+    <div id='main'>
+		<article><a name="44-8237DallasDollie"></a><h2>44-8237 Dallas Dollie</h2>
+		  <p>Below is a partial list of mission for 44-8237 Dallas Dollie (PFF) from <a href="http://valortovictory.tripod.com/b17s/44-8237.htm">http://valortovictory.tripod.com/b17s/44-8237.htm</a> that have been correlated with missions information from <a href="http://www.americanairmuseum.com">http://www.americanairmuseum.com</a>.  Clicking the link will take you to the American Air Museum site for that mission.</p>
+		  <p>
+			  <ul>
+	    		 <li>
+					<a href="http://www.americanairmuseum.com/mission/386" target="new">Mission #77 October 14, 1944 44-8237 H/I 7BS Bower (PFF)</a> 
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/395" target="new">Mission #81 October 22, 1944 44-8237 H/I 18BS Bower (PFF)</a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/398" target="new">Mission #82 October 25, 1944 44-8237 H/I 391BS Blair (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/403" target="new">Mission #85 October 30, 1944 44-8237 H/I 391BS Israelson (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/410" target="new">Mission #86 November 4, 1944 44-8237 H/I 18BS Ray (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/412" target="new">Mission #87 November 5, 1944 44-8237 H/I 7BS Israelson (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/433" target="new">Mission #92 November 25, 1944 44-8237 H/I 7BS Ray (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/439" target="new">Mission #94 November 29, 1944 44-8237 H/I 391BS Israelson (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/446" target="new">Mission #96 December 4, 1944 44-8237 H/I 18BS Heath (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/448" target="new">Mission #97 December 5, 1944 44-8237 H/I 7BS Baker (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/467" target="new">Mission #xx December 23, 1944 44-8237 H/I Cavin (PFF) flew with 490BG </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/470" target="new">Mission #102 December 24, 1944 44-8237 H/I 4BS Perry (PPF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/474" target="new">Mission #103 December 27, 1944 44-8237 H/I 391BS Iverson (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/480" target="new">Mission #104 December 28, 1944 44-8237 H/I 4BS Blair (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/482" target="new">Mission #106 December 31, 1944 44-8237 H/I 4BS Ray (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/486" target="new">Mission #107 January 2, 1945 44-8237 H/I 4BS Baker (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/488" target="new">Mission #108 January 3, 1945 44-8237 H/I 7BS Richardson, Z. (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/495" target="new">Mission #109 January 7, 1945 44-8237 H/I 7BS Iverson (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/499" target="new">Mission #110 January 10, 1945 44-8237 H/I 391BS Perry (MH) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/501" target="new">Mission #111 January 13, 1945 44-8237 H/I 391BS Livingston (MH) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/502" target="new">Mission #112 January 14, 1945 44-8237 H/I 7BS Pelszynski (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/524" target="new">Mission #118 January 29, 1945 44-8237 H/I 391BS Dunham (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/530" target="new">Mission #119 February 3, 1945 44-8237 H/I 391BS Dunham (PFF) </a>
+		 		 </li>
+		 		 <li>
+					 <a href="http://www.americanairmuseum.com/mission/534" target="new">Mission #120 February 6, 1945 44-8237 H/I 18BS Perry (PFF) </a>
+		 		 </li>
+
+     </ul>
+     
+     
+      </article>
+      <nav>
+		  <p><a href="http://johnfunk.com/WWII/">John Funk's WWII Page</a></p>
+        
+		  <p><a href="34thBombGroup.html#44-8237DallasDollie">44-8237 Dallas Dollie</a></p>
+      </nav>
+      
+ <!----     
+      <aside>
+      	<p>Al Israelson piloted the Dallas Dollie on several missions.   I was fortunate to get to know Al by corresponding with him about the 34th. I got to meet him in person at the 2014 dedication of the new 34th Bomb Group Memorial in Mendlesham England.</p>
+     	<a href="https://www.flickr.com/photos/johnfunk/15917061352/in/album-72157649134527140/" target="_new">
+     	<img src="https://farm8.staticflickr.com/7566/15917061352_96ded36b77_m_d.jpg" width="250" height="160" border="0" title="Al Israelson at the dedication of the new 34th Bomb Group Memorial"></a>
+
+		
+	  </aside>
+---> 
+       </div>
+    <footer>See more about the 34th Bomb Group at <a href="http://www.johnfunk.com/WWII/">http://www.johnfunk.com/WWII/</a> </footer>
+  </body>
+</html>
